@@ -1,0 +1,793 @@
+.hidden_js {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.none_js{
+    display: none;
+}
+
+.open {
+    opacity: 1;
+}
+
+.js-wipe {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 1.5s ease-out;
+  }
+  
+  .js-wipe.is-active {
+    width: 100%;
+  }
+
+.side {
+    justify-content: center;
+    display: flex;
+}
+
+.side_header {
+    display: flex;
+}
+
+.feeling_button {
+
+    width: 20%;
+
+    margin: 100px 50px;
+
+    display: inline-block;
+    opacity: 0.8;
+    /* 透明度 */
+    cursor: pointer;
+    /* カーソル形状 */
+    transition: .3s;
+    /* なめらか変化 */
+}
+
+.feeling_button:hover {
+    opacity: 1;
+    /* 透明度 */
+}
+
+.feeling_message {
+    display: none;
+}
+
+.header {
+    height: 50px;
+}
+
+.header img {
+    height: 100%;
+    margin-right: auto;
+}
+
+.rate-form1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form1 input[type=radio] {
+    display: none;
+}
+
+.rate-form1 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form1 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form1 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form1 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form2 input[type=radio] {
+    display: none;
+}
+
+.rate-form2 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form2 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form2 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form2 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form3 input[type=radio] {
+    display: none;
+}
+
+.rate-form3 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form3 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form3 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form3 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form4 input[type=radio] {
+    display: none;
+}
+
+.rate-form4 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form4 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form4 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form4 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form5 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form5 input[type=radio] {
+    display: none;
+}
+
+.rate-form5 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form5 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form5 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form5 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form6 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form6 input[type=radio] {
+    display: none;
+}
+
+.rate-form6 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form6 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form6 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form6 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form7 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form7 input[type=radio] {
+    display: none;
+}
+
+.rate-form7 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form7 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form7 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form7 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form8 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form8 input[type=radio] {
+    display: none;
+}
+
+.rate-form8 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form8 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form8 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form8 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form9 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form9 input[type=radio] {
+    display: none;
+}
+
+.rate-form9 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form9 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form9 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form9 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-form10 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form10 input[type=radio] {
+    display: none;
+}
+
+.rate-form10 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form10 label:hover {
+    color: #ffcc00;
+}
+
+.rate-form10 label:hover~label {
+    color: #ffcc00;
+}
+
+.rate-form10 input[type=radio]:checked~label {
+    color: #ffcc00;
+}
+
+.rate-event1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event1 input[type=radio] {
+    display: none;
+}
+
+.rate-event1 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event1 label img {
+    height: 50px;
+}
+
+.rate-event1 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event2 input[type=radio] {
+    display: none;
+}
+
+.rate-event2 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event2 label img {
+    height: 50px;
+}
+
+.rate-event2 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event3 input[type=radio] {
+    display: none;
+}
+
+.rate-event3 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event3 label img {
+    height: 50px;
+}
+
+.rate-event3 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event4 input[type=radio] {
+    display: none;
+}
+
+.rate-event4 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event4 label img {
+    height: 50px;
+}
+
+.rate-event4 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event5 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event5 input[type=radio] {
+    display: none;
+}
+
+.rate-event5 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event5 label img {
+    height: 50px;
+}
+
+.rate-event5 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event6 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event6 input[type=radio] {
+    display: none;
+}
+
+.rate-event6 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event6 label img {
+    height: 50px;
+}
+
+.rate-event6 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event7 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event7 input[type=radio] {
+    display: none;
+}
+
+.rate-event7 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event7 label img {
+    height: 50px;
+}
+
+.rate-event7 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event8 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event8 input[type=radio] {
+    display: none;
+}
+
+.rate-event8 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event8 label img {
+    height: 50px;
+}
+
+.rate-event8 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event9 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event9 input[type=radio] {
+    display: none;
+}
+
+.rate-event9 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event9 label img {
+    height: 50px;
+}
+
+.rate-event9 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.rate-event10 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-event10 input[type=radio] {
+    display: none;
+}
+
+.rate-event10 label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.rate-event10 label img {
+    height: 50px;
+}
+
+.rate-event10 input[type=radio]:checked+label {
+    filter: none;
+}
+
+.write_margin {
+    margin: 20px 0;
+}
+
+.write_input {
+    margin-left: 20%;
+    width: 50%;
+    height: 50px;
+}
+
+.other {
+    display: flex;
+    justify-content: center;
+}
+
+.other textarea {
+    width: 70%;
+}
+
+.btn {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.good_button {
+    margin-right: 10px;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.checked {
+    filter: none;
+}
+
+.mine_content {
+    width: fit-content;
+}
+
+
+/*----------------------------------------*/
+.day-blank {
+    background-color: #efefef;
+}
+
+.day-sun .day {
+    color: red;
+}
+
+.day-sat .day {
+    color: blue;
+}
+
+.calendar table td {
+    padding: 3px;
+    border: solid 1px #999;
+    width: 14%;
+}
+
+.calendar table td:before {
+    display: block;
+    float: left;
+    height: 100px;
+    content: "";
+}
+
+.calendar table td .day {
+    margin-bottom: 0;
+}
+
+.calendar table th {
+    text-align: center;
+    border: solid 1px #999;
+}
+
+.table {
+    margin:  auto;
+    width: 100%;
+    border: radius 10px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail_form{
+    margin: 20px auto;
+}
+
+.side_content{
+    overflow: scroll;
+
+}
+
+.job{
+    background-color: azure;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.diary_contents{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diary{
+    width: 30%;
+    margin: 0 10px;
+    min-height: 300px;
+}
+
+.title{
+    text-align: center;
+    padding: 2px 0;
+    font-size: large;
+    font-weight: bold;
+    color: darkgreen
+}
+
+.margin_auto{
+    margin: 5px auto 10px;
+}
+
+.radial{
+    background: -webkit-radial-gradient(#75ff85 20%,rgba(255, 255, 255, 0) 50%);
+    background: -moz-radial-gradient(#7577ff 20%,rgba(255, 255, 255, 0) 50%);
+    background: radial-gradient(#8bff97 20%,rgba(255, 255, 255, 0) 50%);
+}
+
+.admin_table{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.admin_table th{
+    background-color: lightgray;
+    border-style: solid;
+    border-color: #999;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.admin_table td{
+    border-style: solid;
+    border-color: #999;
+    border-width: 1px;
+    padding: 5px;
+    padding: 5px;
+    text-align: center
+}
+/*
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
