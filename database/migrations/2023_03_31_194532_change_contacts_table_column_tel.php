@@ -14,7 +14,6 @@ return new class extends Migration
 
         Schema::table('contacts', function (Blueprint $table) {
             $table->string('other_email',255)->nullable()->change();
-            $table->text('body')->nullable(false)->change();
         });
     }
 

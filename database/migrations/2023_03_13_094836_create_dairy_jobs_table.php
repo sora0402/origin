@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('jobs', function (Blueprint $table) {
-            //
-            $table->integer('assessment')->nullable()->change();
-            
+        Schema::create('diary_jobs', function (Blueprint $table) {
+            $table->id();
+            $table->integer('user_id');
+            $table->integer('diary_id');
+            $table->text('body');
+            $table->integer('assessment')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -23,8 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('jobs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('done');
     }
 };

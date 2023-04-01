@@ -11,7 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::rename('report', 'reports');
+        Schema::create('good_jobs', function (Blueprint $table) {
+            $table->id();
+            $table->integer('to_user_id');
+            $table->integer('from_user_id');
+            $table->integer('done_id');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::rename('reports', 'report');
+        Schema::dropIfExists('good_job');
     }
 };

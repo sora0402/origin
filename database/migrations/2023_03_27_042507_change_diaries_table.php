@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('diaries', function (Blueprint $table) {
-            
+            $table->date('date')->change();
             //
         });
     }

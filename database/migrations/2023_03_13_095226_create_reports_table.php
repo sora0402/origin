@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('jobs', function (Blueprint $table) {
-            //
-            $table->integer('assessment')->nullable()->change();
-            
+        Schema::create('reports', function (Blueprint $table) {
+            $table->id();
+            $table->integer('to_user_id');
+            $table->integer('from_user_id');
+            $table->integer('done_id');
+            $table->timestamps();
         });
     }
 
@@ -23,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('jobs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('report');
     }
 };

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('diary_id');
-            $table->string('body');
+            $table->text('body');
             $table->timestamps();
         });
     }

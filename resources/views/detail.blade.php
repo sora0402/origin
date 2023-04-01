@@ -19,12 +19,12 @@
 
                 <div class="center mx-20 p-10 justify-center items-center">
 
-                    <h2 class="mx-10 text-xl  min-w-max">{{ $date }}</h2>
+                    <h2 class="mx-10 text-xl mt-3 min-w-max">{{ $date }}</h2>
                     <div >
                         @if ($feeling == 1)
-                            <img class="mx-auto" src="./img/good.png" alt="" hight="28" width="28">
+                            <img class="mx-auto p-1 rounded-2" src="./img/good.png" alt="" hight="40" width="40">
                         @else
-                            <img class="mx-auto" src="./img/bad.png" alt="" hight="28" width="28">
+                            <img class="mx-auto p-1 rounded-2" src="./img/bad.png" alt="" hight="40" width="40">
                         @endif
                     </div>
                 </div>

@@ -46,33 +46,35 @@
         </div>
     </div>
 
-    <div class="bad_message hidden_js feeling_message">
+    <div class="h-full bad_message hidden_js static m-4 text-center">
+        <p class="text-3xl mt-16 ">そうかぁ、辛いときは誰かに相談してみるのもいいかもね！</p>
+        <div class=" md (768px) h-full">
+            @if (isset($good_jobs))
+                <div class="">
+                    <div>
+                        <p class="text-3xl m-4 radial">{{ $name }}の出来たことのいいねが押されたよ！</p>
+                        @foreach ($good_jobs as $good_job)
+                            <div class="side">
 
-        <p>そうかぁ、もし辛かったら周りの人に相談するのもいいかもね！</p>
+                                <p class="mr-5">{{ $good_job['good_at'] }}</p>
 
-        @if (isset($good_jobs))
-            <div>
-                <div class="radial">
-                    <p>{{ $name }}の出来たことのいいねが押されたよ！</p>
-                    @foreach ($good_jobs as $good_job)
-                        <div class="side">
+                                <p class="ml-5">[ {{ $good_job['body'] }} ]</p>
 
-                            <p>{{ $good_job['good_at'] }}</p>
-                            <img src="./img/heart.png" alt="" height="16px">
-                            <p>{{ $good_job['body'] }}</p>
+                            </div>
+                        @endforeach
+                    </div>
+            @endif
+        </div>
 
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        @endif
-        <div class="">
+        <div class="absolute left-1/4 bottom-0 mb-10 text-center w-6/12">
+            <h4 class="mb-5 text-2xl">さあ日記を書いてみよう</h4>
             <form action="{{ route('create_diary') }}" method="post">
                 @csrf
-                <input type="hidden" name="feeling" value="2">
-                <button type="submit">日記を書く</button>
+                <input type="hidden" name="feeling" value="0">
+                <button class="bg-green-300 p-2 rounded-md mb-10" type="submit">日記を書く</button>
             </form>
         </div>
     </div>
+
 
 @endsection

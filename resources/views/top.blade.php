@@ -17,11 +17,11 @@
                                         @foreach ($diary_things as $diary_thing)
                                             <div class="">
                                                 @foreach ($diary_thing as $thing)
-                                                    <div class="flex justify-center rounded-xl bg-blue-50 m-2 p-1 ">
-                                                        <p class="text_right inline-block w-8/12 m-1">{{ $thing['body'] }}</p>
+                                                    <div class="flex rounded-xl bg-blue-50 m-2 p-1 ">
+                                                        <p class="text-center inline-block w-7/12 m-1">{{ $thing['body'] }}</p>
 
                                                         @if (isset($thing['feeling']))
-                                                            <div class="feeling side m-auto justify-items-end">
+                                                            <div class="feeling side m-auto w-5/12 justify-items-end">
                                                                 @if ($thing['feeling'] == 4)
                                                                     <img class="max-h-8" src="./img/fanny.png" alt="" 
                                                                         width="32" height="32">

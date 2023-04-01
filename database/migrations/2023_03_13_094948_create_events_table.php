@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('diary_id');
-            $table->integer('feeling');
-            $table->string('body');
+            $table->integer('feeling')->nullable();
+            $table->text('body');
             $table->timestamps();
         });
     }

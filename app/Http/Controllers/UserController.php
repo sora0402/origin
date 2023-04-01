@@ -136,6 +136,15 @@ class UserController extends Controller
             $hide_user_id = null;
         }
 
+        if ($users->where('hide_share_mode', '1')->exists()) {
+            $hide_share_users = $users->where('hide_share_mode', '1')->get();
+            foreach ($hide_share_users as $hide_share_user) {
+                $hide_share_user_id[] = $hide_share_user['id'];
+            }
+        } else {
+            $hide_share_user_id = null;
+        }
+
         if ($report->where('from_user_id', $user['id'])->exists()) {
             $hide_jobs = $report->where('from_user_id', $user['id'])->get();
 
@@ -161,6 +170,12 @@ class UserController extends Controller
 
             if (isset($hide_job_id)) {
                 if (in_array($job_tmp['id'], $hide_job_id)) {
+                    continue;
+                }
+            }
+
+            if (isset($hide_share_user_id)) {
+                if (in_array($job_tmp['user_id'], $hide_share_user_id)) {
                     continue;
                 }
             }
