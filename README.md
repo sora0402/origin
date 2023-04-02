@@ -1,33 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 名前【 What'_up 】
+ 
+共有機能付き日記アプリケーション
+ 
+# 概要
+ 
+日記の一部の内容を共有し、他の人の書いた日記にいいねをつけることができる日記アプリになります。
+ 
+# 使い方
+ 
+一番最初の管理者ユーザーはDBを直接操作しusers_tableのroleカラムを"admin"に設定する必要あり。
+（以降の管理者は管理者画面で編集可能）
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+なお、お使いのphpMyAdminに上のデータベースを作り、入っているwhat's_up.sqlをインポートしていただければそのままお使いいただけるようになると思います。
 
-## About Laravel
+# テストアカウント
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+一般ユーザー[ email:test1@test1, PW:testtest ]
+一般ユーザー2[ email:test2@test2, PW:testtest ]
+管理者[ email:test3@test3, PW:testtest ]
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ 
+# Requirement
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+PHP_versions: PHP 8.1.12
+laravel_versions: v10.4.1
+ 
+npm ls
+C:\xampp\htdocs\what's_up
++-- @popperjs/core@2.11.6
++-- @tailwindcss/forms@0.5.3
++-- @vitejs/plugin-vue@4.1.0
++-- alpinejs@3.12.0
++-- autoprefixer@10.4.14
++-- axios@1.3.4
++-- bootstrap@5.2.3
++-- laravel-vite-plugin@0.7.4
++-- postcss@8.4.21
++-- sass@1.59.3
++-- tailwindcss@3.2.7
++-- vite@4.2.1
+`-- vue@3.2.47
 
-## Learning Laravel
+#　env一部内容
+APP_NAME=whats_up
+APP_ENV=local
+APP_URL=http://localhost
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=whats_up
+DB_USERNAME=root
+DB_PASSWORD=root
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=database
+QUEUE_DRIVER=database
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+
 
 ## Laravel Sponsors
 
